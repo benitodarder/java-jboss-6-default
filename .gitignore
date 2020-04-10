@@ -21,3 +21,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/hello-world-service/target/
+/webapp-jboss-6/webapp-dao-jboss-6/target/
+/webapp-jboss-6/webapp-model-data-jboss-6/target/
+/webapp-jboss-6/webapp-model-domain-jboss-6/target/
+/webapp-jboss-6/webapp-service-jboss-6/target/
+/webapp-jboss-6/webapp-utils-files-jboss-6/target/
+/webapp-jboss-6/webapp-utils-xml-jboss-6/target/
+/crud-service/webapp-dao-jboss-6/target/
+/crud-service/webapp-model-data-jboss-6/target/
+/crud-service/webapp-model-domain-jboss-6/target/
+/crud-service/webapp-service-jboss-6/target/
+/crud-service/webapp-utils-files-jboss-6/target/
+/crud-service/webapp-utils-xml-jboss-6/target/
+/crud-service/jboss-6-crud-service-dao/target/
+/crud-service/jboss-6-crud-service-model-data/target/
+/crud-service/jboss-6-crud-service-model-domain/target/
+/crud-service/jboss-6-crud-service/target/
