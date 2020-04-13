@@ -25,7 +25,7 @@ public abstract class BaseDAOTest {
     protected static final int ID = 666;
     protected static final String NAME = "name";
     protected static ProductDAOFactory mockedDAOFactory;        
-    protected EntityManagerFactory mockedEntityManagerFactory;
+    protected static EntityManagerFactory mockedEntityManagerFactory;
     protected EntityManager mockedEntityManager;
     protected AssemblyDAO mockedAssemblyDAO;
     protected local.tin.tests.model.domain.product.Assembly mockedDomainAssembly;
@@ -34,12 +34,12 @@ public abstract class BaseDAOTest {
     @BeforeClass
     public static void setUpClass() {
         mockedDAOFactory = mock(ProductDAOFactory.class);
+        mockedEntityManagerFactory = mock(EntityManagerFactory.class);        
     }
         
     
     protected void setUpBaseMocks() {
         mockedEntityManager = mock(EntityManager.class);
-        mockedEntityManagerFactory = mock(EntityManagerFactory.class);
         when(mockedEntityManagerFactory.createEntityManager()).thenReturn(mockedEntityManager);
         PowerMockito.mockStatic(ProductDAOFactory.class);
         when(ProductDAOFactory.getInstance()).thenReturn(mockedDAOFactory);            

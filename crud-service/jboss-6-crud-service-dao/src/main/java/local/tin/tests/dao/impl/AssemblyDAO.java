@@ -73,10 +73,6 @@ public class AssemblyDAO extends AbstractDAO<local.tin.tests.model.domain.produc
 
     @Override
     protected Assembly updateDataObjectDeeperFields(local.tin.tests.model.domain.product.Assembly domainObject, Assembly dataObject, int depth) throws DAOException {
-        ComponentDAO componentDAO = (ComponentDAO) ProductDAOFactory.getInstance().getDAO(Component.class);
-        dataObject.setComponent(componentDAO.getDataObject(domainObject.getComponent(), DEFAULT_DEPTH_ENTITY));
-        ProductDAO productDAO = (ProductDAO) ProductDAOFactory.getInstance().getDAO(Product.class);
-        dataObject.setProduct(productDAO.getDataObject(domainObject.getProduct(), DEFAULT_DEPTH_ENTITY));
         return dataObject;
     }
 

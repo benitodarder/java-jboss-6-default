@@ -10,34 +10,29 @@ import org.apache.log4j.Logger;
  * @author benito.darder
  */
 public class ProductDAOConfiguration extends AbstractDAOConfiguration {
-    
-    private static final Logger LOGGER = Logger.getLogger(ProductDAOConfiguration.class);    
-    private static final Object LOCK = new Object();
-    private static boolean initialized = false;
+
+    private static final Logger LOGGER = Logger.getLogger(ProductDAOConfiguration.class);
     private static Map<String, String> configurationMap;
-    
+
     private ProductDAOConfiguration() {
     }
-    
-    public static ProductDAOConfiguration getInstance() {
-        if (!initialized) {
-            synchronized (LOCK) {
-                if (!initialized) {
-                    configurationMap = new HashMap<>();
-                    initialized = true;
-                }
-            }
-        }        
+
+    public static synchronized ProductDAOConfiguration getInstance() {
+
+        if (configurationMap == null) {
+            configurationMap = new HashMap<>();
+        }
         return DAOConfigurationConfigurationHolder.INSTANCE;
     }
 
     private static class DAOConfigurationConfigurationHolder {
 
         private static final ProductDAOConfiguration INSTANCE = new ProductDAOConfiguration();
-        
-        private DAOConfigurationConfigurationHolder() {}
+
+        private DAOConfigurationConfigurationHolder() {
+        }
     }
-  
+
     @Override
     public Map<String, String> getConfigurationMap() {
         return configurationMap;
@@ -47,5 +42,5 @@ public class ProductDAOConfiguration extends AbstractDAOConfiguration {
     public Logger getLogger() {
         return LOGGER;
     }
-    
+
 }
