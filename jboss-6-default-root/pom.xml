@@ -30,7 +30,6 @@
         <jaxb2-maven-plugin.version>2.1</jaxb2-maven-plugin.version> 
         <jcip.annotations.version>1.0</jcip.annotations.version>
         <jersey.version>2.7</jersey.version>
-        <jetty.server.version>9.2.3.v20140905</jetty.server.version>
         <jsr250.api.version>1.0</jsr250.api.version>
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
@@ -55,21 +54,6 @@
     </properties>                                               
     <dependencyManagement>
         <dependencies> 
-            <dependency>
-                <groupId>net.sf.saxon</groupId>
-                <artifactId>Saxon-HE</artifactId>
-                <version>${saxon.he.version}</version>
-            </dependency>        
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-server</artifactId>
-                <version>${jetty.server.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-servlet</artifactId>
-                <version>${jetty.server.version}</version>
-            </dependency>
             <dependency>
                 <groupId>org.glassfish.jersey.core</groupId>
                 <artifactId>jersey-server</artifactId>
