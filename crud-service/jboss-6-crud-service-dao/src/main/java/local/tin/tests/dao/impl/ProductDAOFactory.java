@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 
 public class ProductDAOFactory extends AbstractDAOFactory {
 
+    public static final String UNEXPECTED_DAO_EXCEPTION_CREATING_ENTITY_M = "Unexpected DAOException creating entity manager factory: ";    
     private static final Object LOCK = new Object();
     private static final Logger LOGGER = Logger.getLogger(ProductDAOFactory.class);
     private static volatile EntityManagerFactory entityManagerFactory;
@@ -33,8 +34,8 @@ public class ProductDAOFactory extends AbstractDAOFactory {
                     try {
                         entityManagerFactory = Persistence.createEntityManagerFactory(ProductDAOConfiguration.getInstance().getPersistenceUnit());
                     } catch (DAOException ex) {
-                        LOGGER.error("Unexpected DAOException creating entity manager factory: " + ex.getLocalizedMessage());
-                        LOGGER.debug("Unexpected DAOException creating entity manager factory: " + ex.getLocalizedMessage(), ex);
+                        LOGGER.error(UNEXPECTED_DAO_EXCEPTION_CREATING_ENTITY_M + ex.getLocalizedMessage());
+                        LOGGER.debug(UNEXPECTED_DAO_EXCEPTION_CREATING_ENTITY_M + ex.getLocalizedMessage(), ex);
                     }
                 }
             }
