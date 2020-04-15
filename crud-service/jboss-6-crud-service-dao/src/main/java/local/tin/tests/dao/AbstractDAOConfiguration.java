@@ -1,6 +1,6 @@
 package local.tin.tests.dao;
 
-import local.tin.tests.dao.AbstractConfiguration;
+import local.tin.tests.services.configuration.AbstractConfiguration;
 import local.tin.tests.model.domain.exceptions.DAOException;
 import local.tin.tests.model.domain.exceptions.ServiceException;
 

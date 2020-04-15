@@ -16,6 +16,7 @@ import org.apache.log4j.Logger;
  */
 public class ProductContextListener implements ServletContextListener {
 
+    public static final String COULD_NOT_LOAD_CONFIGURATIONSERVICEPROPER = "Could not load configuration-service.properties: ";
     private static final Logger LOGGER = Logger.getLogger(ProductContextListener.class);
     
     @Override
@@ -28,8 +29,8 @@ public class ProductContextListener implements ServletContextListener {
             ServiceConfiguration.getInstance().setCRUDBasePackage(properties.getProperty(ServiceConfiguration.CRUD_BASE_PACKAGE));
             ServiceConfiguration.getInstance().setModelDomainPackage(properties.getProperty(ServiceConfiguration.MODEL_DOMAIN_PACKAGE));
         } catch (IOException ex) {
-            LOGGER.error("Could not load configuration-service.properties: " + ex.getLocalizedMessage());
-            LOGGER.debug("Could not load configuration-service.properties.", ex);
+            LOGGER.error(COULD_NOT_LOAD_CONFIGURATIONSERVICEPROPER + ex.getLocalizedMessage());
+            LOGGER.debug(COULD_NOT_LOAD_CONFIGURATIONSERVICEPROPER, ex);
         } 
     }
 

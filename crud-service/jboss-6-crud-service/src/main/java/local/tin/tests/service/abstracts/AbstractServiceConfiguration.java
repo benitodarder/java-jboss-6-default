@@ -1,7 +1,7 @@
 package local.tin.tests.service.abstracts;
 
 import local.tin.tests.model.domain.exceptions.ServiceException;
-
+import local.tin.tests.services.configuration.AbstractConfiguration;
 /**
  *
  * @author benito.darder
