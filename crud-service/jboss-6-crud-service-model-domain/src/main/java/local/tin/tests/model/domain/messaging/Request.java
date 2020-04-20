@@ -12,7 +12,7 @@ import local.tin.tests.model.domain.abstracts.AbstractProduct;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlSeeAlso({AbstractProduct.class})
+@XmlSeeAlso({AbstractProduct.class}) 
 public class Request extends AbstractRequest {
     
 

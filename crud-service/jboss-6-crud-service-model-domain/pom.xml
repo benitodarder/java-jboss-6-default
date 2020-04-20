@@ -42,6 +42,6 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>common-base-model-domain</artifactId>
             <version>${project.version}</version>
-        </dependency>
+        </dependency>      
     </dependencies>
 </project>

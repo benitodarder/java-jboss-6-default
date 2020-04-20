@@ -1,6 +1,8 @@
 package local.tin.tests.model.domain.product;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -16,7 +18,8 @@ public class Unit extends AbstractNamedProduct {
 
     private Integer id;
     private String abbreviation;
-
+    private Set<Component> components; 
+    
     @Override
     public Integer getId() {
         return id;
@@ -67,5 +70,14 @@ public class Unit extends AbstractNamedProduct {
         this.abbreviation = abbreviation;
     }
     
-    
+    public Set<Component> getComponents() {
+        if (components == null) {
+            components = new HashSet<>();
+        }
+        return components;
+    }
+
+    public void setComponents(Set<Component> components) {
+        this.components = components;
+    }    
 }

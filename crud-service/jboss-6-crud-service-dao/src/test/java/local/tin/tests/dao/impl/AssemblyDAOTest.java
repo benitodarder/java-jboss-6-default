@@ -25,9 +25,7 @@ public class AssemblyDAOTest extends BaseDAOTest {
     private ProductDAO mockedProductDAO;
     private local.tin.tests.model.domain.product.Product mockedDomainProduct;
     private local.tin.tests.model.data.product.Product mockedDataProduct; 
-    private ComponentDAO mockedComponentDAO;
-    private local.tin.tests.model.domain.product.Component mockedDomainComponent;
-    private local.tin.tests.model.data.product.Component mockedDataComponent;
+
     
     @Before
     public void setUp() throws DAOException {
@@ -43,13 +41,10 @@ public class AssemblyDAOTest extends BaseDAOTest {
         mockedDataProduct = mock(local.tin.tests.model.data.product.Product.class);
         when(mockedProductDAO.getDataObject(eq(mockedDomainProduct), anyInt())).thenReturn(mockedDataProduct);
         when(mockedProductDAO.getDomainObject(eq(mockedDataProduct), anyInt())).thenReturn(mockedDomainProduct);
-        mockedComponentDAO = mock(ComponentDAO.class);
-        when(mockedDAOFactory.getDAO(local.tin.tests.model.data.product.Component.class)).thenReturn(mockedComponentDAO);
-        mockedDomainComponent = mock(local.tin.tests.model.domain.product.Component.class);
-        mockedDataComponent = mock(local.tin.tests.model.data.product.Component.class);
-        when(mockedComponentDAO.getDataObject(eq(mockedDomainComponent), anyInt())).thenReturn(mockedDataComponent);
-        when(mockedComponentDAO.getDomainObject(eq(mockedDataComponent), anyInt())).thenReturn(mockedDomainComponent);        
+        setComponentMocks();
     }
+
+
 
     @Test
     public void updateDomainObjectDepth0Fields_assigns_fields() throws DAOException {

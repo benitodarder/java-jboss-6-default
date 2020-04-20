@@ -1,10 +1,14 @@
 package local.tin.tests.model.data.product;
 
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import local.tin.tests.model.data.abstracts.AbstractNamed;
 
@@ -22,7 +26,9 @@ public class Unit extends AbstractNamed {
     private Integer id;
     @Column(name = "abbreviation")
     private String abbreviation;
-
+    @OneToMany(mappedBy = "unit", fetch = FetchType.LAZY)
+    private Set<Component> components;    
+    
     @Override
     public Integer getId() {
         return id;
@@ -39,6 +45,17 @@ public class Unit extends AbstractNamed {
 
     public void setAbbreviation(String abbreviation) {
         this.abbreviation = abbreviation;
+    }
+
+    public Set<Component> getComponents() {
+        if (components == null) {
+            components = new HashSet<>();
+        }
+        return components;
+    }
+
+    public void setComponents(Set<Component> components) {
+        this.components = components;
     }
 
     

@@ -39,6 +39,10 @@ public class UnitDAO extends AbstractDAO<local.tin.tests.model.domain.product.Un
 
     @Override
     protected local.tin.tests.model.domain.product.Unit updateDomainObjectDeeperFields(local.tin.tests.model.domain.product.Unit domainObject, Unit dataObject, int depth) throws DAOException {
+        ComponentDAO componentDAO = getComponentDAO();
+        for (local.tin.tests.model.data.product.Component current : dataObject.getComponents()) {
+            domainObject.getComponents().add(componentDAO.getDomainObject(current, depth));
+        }
         return domainObject;
     }
 
@@ -51,7 +55,14 @@ public class UnitDAO extends AbstractDAO<local.tin.tests.model.domain.product.Un
 
     @Override
     protected Unit updateDataObjectDeeperFields(local.tin.tests.model.domain.product.Unit domainObject, Unit dataObject, int depth) throws DAOException {
+        ComponentDAO componentDAO = getComponentDAO();
+        for (local.tin.tests.model.domain.product.Component current : domainObject.getComponents()) {
+            dataObject.getComponents().add(componentDAO.getDataObject(current, depth));
+        }        
         return dataObject;
     }
     
+    private ComponentDAO getComponentDAO() throws DAOException {
+        return (ComponentDAO) ProductDAOFactory.getInstance().getDAO(local.tin.tests.model.data.product.Component.class);
+    }
 }

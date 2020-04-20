@@ -121,7 +121,7 @@ public abstract class AbstractCRUDFacade {
 
     @GET
     @Path("/{klass}/retrieveAll")
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response retrieveAll(@PathParam("klass") String klass) {
         try {
             AbstractCRUD crud = baseCrudFactory.getCRUD(getNormalizedClassName(klass));

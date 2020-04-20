@@ -30,6 +30,9 @@ public abstract class BaseDAOTest {
     protected AssemblyDAO mockedAssemblyDAO;
     protected local.tin.tests.model.domain.product.Assembly mockedDomainAssembly;
     protected local.tin.tests.model.data.product.Assembly mockedDataAssembly;
+    protected ComponentDAO mockedComponentDAO;
+    protected local.tin.tests.model.domain.product.Component mockedDomainComponent;
+    protected local.tin.tests.model.data.product.Component mockedDataComponent;    
     
     @BeforeClass
     public static void setUpClass() {
@@ -52,5 +55,14 @@ public abstract class BaseDAOTest {
         mockedDataAssembly = mock(local.tin.tests.model.data.product.Assembly.class);
         when(mockedAssemblyDAO.getDataObject(eq(mockedDomainAssembly), anyInt())).thenReturn(mockedDataAssembly);
         when(mockedAssemblyDAO.getDomainObject(eq(mockedDataAssembly), anyInt())).thenReturn(mockedDomainAssembly);
+    }    
+    
+    protected void setComponentMocks() throws DAOException {
+        mockedComponentDAO = mock(ComponentDAO.class);
+        when(mockedDAOFactory.getDAO(local.tin.tests.model.data.product.Component.class)).thenReturn(mockedComponentDAO);
+        mockedDomainComponent = mock(local.tin.tests.model.domain.product.Component.class);
+        mockedDataComponent = mock(local.tin.tests.model.data.product.Component.class);
+        when(mockedComponentDAO.getDataObject(eq(mockedDomainComponent), anyInt())).thenReturn(mockedDataComponent);
+        when(mockedComponentDAO.getDomainObject(eq(mockedDataComponent), anyInt())).thenReturn(mockedDomainComponent);        
     }    
 }

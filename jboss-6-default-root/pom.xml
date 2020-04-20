@@ -20,6 +20,7 @@
         <hibernate.version>3.5.0-Final</hibernate.version>
         <hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>        
         <jacoco.version>0.7.8</jacoco.version>   
+        <jackson.version>1.6.3</jackson.version>        
         <javaassist.version>3.12.1.GA</javaassist.version>
         <java.ee.web.version>6.0</java.ee.web.version>
         <java.servlet.api>2.5</java.servlet.api>  
@@ -54,6 +55,21 @@
     </properties>                                               
     <dependencyManagement>
         <dependencies> 
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-core-asl</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>    
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-jaxrs</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>  
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>              
             <dependency>
                 <groupId>org.glassfish.jersey.core</groupId>
                 <artifactId>jersey-server</artifactId>

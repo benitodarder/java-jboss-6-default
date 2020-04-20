@@ -18,8 +18,9 @@ public class UnitDAOTest extends BaseDAOTest {
     private local.tin.tests.model.data.product.Unit dataObject;
     
     @Before
-    public void setUp() {
+    public void setUp() throws DAOException {
         setUpBaseMocks();
+        setComponentMocks();
         dao = new UnitDAO(mockedEntityManagerFactory);
         domainObject = new local.tin.tests.model.domain.product.Unit();
         dataObject = new local.tin.tests.model.data.product.Unit();
@@ -50,5 +51,23 @@ public class UnitDAOTest extends BaseDAOTest {
         assertThat(dataObject.getAbbreviation(), equalTo(ABBREVIATION));
         assertThat(dataObject.getName(), equalTo(NAME));
     }    
+    
+    @Test
+    public void updateDomainObjectDeeperFields_assigns_fields() throws DAOException {
+        dataObject.getComponents().add(mockedDataComponent);
+        
+        dao.updateDomainObjectDeeperFields(domainObject, dataObject, 0);
+        
+        assertThat(domainObject.getComponents().contains(mockedDomainComponent), equalTo(true));
+    }
 
+    @Test
+    public void updateDataObjectDeeperFields_assigns_fields() throws DAOException {
+        domainObject.getComponents().add(mockedDomainComponent);
+        
+        dao.updateDataObjectDeeperFields(domainObject, dataObject, 0);
+        
+        assertThat(dataObject.getComponents().contains(mockedDataComponent), equalTo(true));
+    }
+    
 }
