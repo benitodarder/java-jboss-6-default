@@ -6,7 +6,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import local.tin.tests.model.domain.compositeIds.AssemblyId;
 import local.tin.tests.model.domain.abstracts.AbstractProduct;
-
+import local.tin.tests.model.domain.deserializers.AssemblyDeserializer;
+import local.tin.tests.model.domain.deserializers.AssemblyIdDeserializer;
+import org.codehaus.jackson.map.annotate.JsonDeserialize;
 
 /**
  *
@@ -14,8 +16,10 @@ import local.tin.tests.model.domain.abstracts.AbstractProduct;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
+@JsonDeserialize(using = AssemblyDeserializer.class)
 public class Assembly extends AbstractProduct {
 
+    @JsonDeserialize(using = AssemblyIdDeserializer.class)
     private AssemblyId id;
     private Double quantity;
     private Product product;
@@ -36,7 +40,7 @@ public class Assembly extends AbstractProduct {
     public void setComponent(Component component) {
         this.component = component;
     }
-    
+
     @Override
     public AssemblyId getId() {
         return id;
@@ -79,7 +83,7 @@ public class Assembly extends AbstractProduct {
             return false;
         }
         return Objects.equals(this.quantity, other.quantity);
-    }  
+    }
 
     @Override
     public String toString() {

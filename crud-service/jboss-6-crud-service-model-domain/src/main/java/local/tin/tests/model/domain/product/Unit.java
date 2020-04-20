@@ -5,6 +5,8 @@ import java.util.Objects;
 import java.util.Set;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import local.tin.tests.model.domain.abstracts.AbstractNamedProduct;
 
@@ -18,6 +20,8 @@ public class Unit extends AbstractNamedProduct {
 
     private Integer id;
     private String abbreviation;
+    @XmlElementWrapper(name="components")
+    @XmlElementRef     
     private Set<Component> components; 
     
     @Override

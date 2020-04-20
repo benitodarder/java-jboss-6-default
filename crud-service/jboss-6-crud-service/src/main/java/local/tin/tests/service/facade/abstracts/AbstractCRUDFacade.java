@@ -34,8 +34,8 @@ public abstract class AbstractCRUDFacade {
 
     @POST
     @Path("/create")
-    @Produces(MediaType.APPLICATION_XML)
-    @Consumes(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response create(Request parameter) {
         try {
             AbstractCRUD crud = baseCrudFactory.getCRUD(getNormalizedClassName(parameter.getItem().getClass().getSimpleName()));
@@ -56,8 +56,8 @@ public abstract class AbstractCRUDFacade {
 
     @POST
     @Path("/retrieve")
-    @Produces(MediaType.APPLICATION_XML)
-    @Consumes(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response retrieve(Request parameter) {
         try {
             AbstractCRUD crud = baseCrudFactory.getCRUD(getNormalizedClassName(parameter.getItem().getClass().getSimpleName()));
@@ -78,8 +78,8 @@ public abstract class AbstractCRUDFacade {
 
     @POST
     @Path("/update")
-    @Produces(MediaType.APPLICATION_XML)
-    @Consumes(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response update(Request parameter) {
         try {
             AbstractCRUD crud = baseCrudFactory.getCRUD(getNormalizedClassName(parameter.getItem().getClass().getSimpleName()));
@@ -100,8 +100,8 @@ public abstract class AbstractCRUDFacade {
 
     @POST
     @Path("/delete")
-    @Produces(MediaType.APPLICATION_XML)
-    @Consumes(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response delete(Request parameter) {
         try {
             AbstractCRUD crud = baseCrudFactory.getCRUD(getNormalizedClassName(parameter.getItem().getClass().getSimpleName()));

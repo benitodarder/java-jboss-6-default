@@ -18,4 +18,6 @@ import local.tin.tests.model.domain.product.Unit;
 @XmlSeeAlso({Assembly.class, Component.class, Product.class, Unit.class})
 public abstract class AbstractProduct extends AbstractIdentifiable {
     
+   
+    
 }
