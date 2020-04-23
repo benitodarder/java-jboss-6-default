@@ -5,9 +5,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import local.tin.tests.model.domain.product.Assembly;
-import local.tin.tests.model.domain.product.Component;
-import local.tin.tests.model.domain.product.Product;
-import local.tin.tests.model.domain.product.Unit;
 
 /**
  *
@@ -15,7 +12,7 @@ import local.tin.tests.model.domain.product.Unit;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlSeeAlso({Assembly.class, Component.class, Product.class, Unit.class})
+@XmlSeeAlso({Assembly.class})
 public abstract class AbstractProduct extends AbstractIdentifiable {
     
    
