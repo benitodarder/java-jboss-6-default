@@ -38,3 +38,7 @@ hs_err_pid*
 /crud-service/jboss-6-crud-service-model-data/target/
 /crud-service/jboss-6-crud-service-model-domain/target/
 /crud-service/jboss-6-crud-service/target/
+
+/**/nbactions.xml
+/**/nb-configuration.xml
+
