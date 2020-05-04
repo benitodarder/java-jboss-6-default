@@ -1,0 +1,12 @@
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/abstracts/AbstractServiceConfiguration.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/abstracts/AbstractCRUDFactory.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/impl/Assembly.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/web/ProductContextListener.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/impl/ProductCRUDFactory.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/impl/Unit.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/facade/abstracts/AbstractCRUDFacade.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/ServiceConfiguration.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/impl/Component.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/abstracts/AbstractCRUD.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/facade/ProductsCRUD.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service/src/main/java/local/tin/tests/service/crud/impl/Product.java

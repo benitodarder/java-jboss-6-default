@@ -1,0 +1,16 @@
+local/tin/tests/service/facade/abstracts/AbstractCRUDFacade.class
+local/tin/tests/service/crud/impl/ProductCRUDFactory$CRUDFactoryHolder.class
+local/tin/tests/service/crud/impl/ProductCRUDFactory$1.class
+local/tin/tests/service/crud/abstracts/AbstractCRUD.class
+local/tin/tests/service/crud/impl/Unit.class
+local/tin/tests/service/facade/ProductsCRUD.class
+local/tin/tests/service/ServiceConfiguration$DAOConfigurationConfigurationHolder.class
+local/tin/tests/service/ServiceConfiguration.class
+local/tin/tests/service/crud/abstracts/AbstractCRUDFactory.class
+local/tin/tests/service/web/ProductContextListener.class
+local/tin/tests/service/ServiceConfiguration$1.class
+local/tin/tests/service/crud/impl/Component.class
+local/tin/tests/service/crud/impl/ProductCRUDFactory.class
+local/tin/tests/service/crud/impl/Assembly.class
+local/tin/tests/service/abstracts/AbstractServiceConfiguration.class
+local/tin/tests/service/crud/impl/Product.class

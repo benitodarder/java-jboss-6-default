@@ -6,8 +6,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>../hello-world-service</module>
-        <module>../crud-service/jboss-6-crud-service-root</module>
+        <module>../jboss-6-crud-service/jboss-6-crud-service-root</module>
+        <module>../jboss-6-hello-world-service</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

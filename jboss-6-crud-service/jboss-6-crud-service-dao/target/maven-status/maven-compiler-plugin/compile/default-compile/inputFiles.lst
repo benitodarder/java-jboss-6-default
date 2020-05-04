@@ -1,0 +1,10 @@
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/AssemblyDAO.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/ComponentDAO.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/interfaces/IAbstractDAO.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/ProductDAOConfiguration.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/ProductDAOFactory.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/ProductDAO.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/UnitDAO.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/AbstractDAO.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/AbstractDAOConfiguration.java
+/home/benitodarder/Development/gitHub/benitodarder/04/jboss-6-default/jboss-6-crud-service/jboss-6-crud-service-dao/src/main/java/local/tin/tests/dao/impl/AbstractDAOFactory.java

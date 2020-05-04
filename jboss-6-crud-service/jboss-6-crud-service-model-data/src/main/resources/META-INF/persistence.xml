@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="products" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <!-- Managed configuration -->     
+        <non-jta-data-source>java:products</non-jta-data-source>
+        <class>local.tin.tests.model.data.product.Assembly</class>
+        <class>local.tin.tests.model.data.product.Component</class>
+        <class>local.tin.tests.model.data.product.Product</class>
+        <class>local.tin.tests.model.data.product.Unit</class>        
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+        </properties>            
+    </persistence-unit>
+        
+    <!-- Standalone configuration by properties -->
+    <!--        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver"/>
+            <property name="hibernate.connection.url" value="jdbc:hsqldb:hsql://localhost:9001/products"/>
+            <property name="hibernate.connection.username" value="SA"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+        </properties>
+    </persistence-unit>-->
+</persistence>
+
+
