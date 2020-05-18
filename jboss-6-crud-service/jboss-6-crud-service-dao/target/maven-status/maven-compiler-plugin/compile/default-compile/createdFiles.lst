@@ -1,6 +1,5 @@
 local/tin/tests/dao/impl/ProductDAOFactory$Loader.class
 local/tin/tests/dao/impl/ProductDAOFactory$1.class
-local/tin/tests/dao/AbstractDAOConfiguration.class
 local/tin/tests/dao/impl/UnitDAO.class
 local/tin/tests/dao/impl/ProductDAO.class
 local/tin/tests/dao/impl/ProductDAOFactory.class

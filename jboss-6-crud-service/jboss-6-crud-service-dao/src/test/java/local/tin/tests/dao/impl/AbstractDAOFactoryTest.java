@@ -2,7 +2,7 @@ package local.tin.tests.dao.impl;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import local.tin.tests.dao.AbstractDAOConfiguration;
+import local.tin.tests.common.base.configuration.AbstractDAOConfiguration;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.BeforeClass;

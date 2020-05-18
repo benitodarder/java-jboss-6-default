@@ -132,6 +132,11 @@
             <artifactId>common-base-service-servlets</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>common-base-configuration</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
     <name>jboss-6-crud-service</name>
 </project>

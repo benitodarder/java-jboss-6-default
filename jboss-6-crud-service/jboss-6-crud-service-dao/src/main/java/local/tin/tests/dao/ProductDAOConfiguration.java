@@ -1,8 +1,8 @@
 package local.tin.tests.dao;
 
+import local.tin.tests.common.base.configuration.AbstractDAOConfiguration;
 import java.util.HashMap;
 import java.util.Map;
-import local.tin.tests.dao.AbstractDAOConfiguration;
 import org.apache.log4j.Logger;
 
 /**
