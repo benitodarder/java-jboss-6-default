@@ -1,9 +1,9 @@
 
 Sample HSQLDB command: 
 
-	java -cp /opt/hsqldb/1.8.1.3/lib/hsqldb.jar org.hsqldb.Server -database.0 file:/home/benitodarder/Development/databases/hsqldb/webappJBoss6.1/products/products.db -dbname.0 products
+	java -cp /opt/hsqldb/1.8.1.3/lib/hsqldb.jar org.hsqldb.Server -silent false -database.0 file:/home/benitodarder/Development/databases/hsqldb/webappJBoss6.1/products/products.db -dbname.0 products
 
-JNDI entry:
+Sample JNDI entry:
 
    <local-tx-datasource>  
       <jndi-name>product</jndi-name>
