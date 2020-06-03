@@ -1,3 +1,6 @@
+local/tin/tests/dao/impl/AssemblyDAO.class
+local/tin/tests/dao/ProductDAOConfiguration.class
+local/tin/tests/dao/impl/ComponentDAO.class
 local/tin/tests/dao/impl/ProductDAOFactory$Loader.class
 local/tin/tests/dao/impl/ProductDAOFactory$1.class
 local/tin/tests/dao/impl/UnitDAO.class
@@ -6,8 +9,3 @@ local/tin/tests/dao/impl/ProductDAOFactory.class
 local/tin/tests/dao/ProductDAOConfiguration$DAOConfigurationConfigurationHolder.class
 local/tin/tests/dao/ProductDAOConfiguration$1.class
 local/tin/tests/dao/interfaces/IAbstractDAO.class
-local/tin/tests/dao/impl/AssemblyDAO.class
-local/tin/tests/dao/ProductDAOConfiguration.class
-local/tin/tests/dao/impl/ComponentDAO.class
-local/tin/tests/dao/impl/AbstractDAOFactory.class
-local/tin/tests/dao/impl/AbstractDAO.class

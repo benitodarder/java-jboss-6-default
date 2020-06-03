@@ -69,7 +69,7 @@
                 </exclusion>
             </exclusions>   
             <scope>provided</scope>         
-        </dependency>
+        </dependency>         
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>jboss-6-crud-service-model-domain</artifactId>
@@ -99,6 +99,21 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>common-base-configuration</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>common-base-dao</artifactId>
+            <version>${project.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-entitymanager</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>local.tin.tests</groupId>
+                    <artifactId>hibernate-entitymanager</artifactId>
+                </exclusion>                
+            </exclusions>
         </dependency>
     </dependencies>
     <build>
