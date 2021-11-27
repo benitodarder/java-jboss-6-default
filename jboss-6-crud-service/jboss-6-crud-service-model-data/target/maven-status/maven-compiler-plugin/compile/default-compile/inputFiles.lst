@@ -1,5 +1,13 @@
 C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\product\Unit.java
-C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\product\Component.java
 C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\embeddables\AssemblyId.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\abstracts\AbstractIdentifiable.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\interfaces\IIdentifiable.java
 C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\product\Assembly.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\abstracts\AbstractEnableable.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\interfaces\IDataObject.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\product\Component.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\abstracts\AbstractNamed.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\interfaces\IEnableable.java
 C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\product\Product.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\interfaces\INamed.java
+C:\Users\benitodarder\Development\github\benitodarder\01\jboss-6-default\jboss-6-crud-service\jboss-6-crud-service-model-data\src\main\java\local\tin\tests\model\data\interfaces\IEmbeddable.java

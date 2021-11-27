@@ -6,7 +6,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import local.tin.tests.dao.ProductDAOConfiguration;
 import local.tin.tests.service.ServiceConfiguration;
-import local.tin.tests.utils.file.ResourcesUtils;
+import local.tin.tests.service.utils.ResourcesUtils;
 
 import org.apache.log4j.Logger;
 
