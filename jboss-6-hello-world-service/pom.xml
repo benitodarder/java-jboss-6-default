@@ -9,7 +9,6 @@
         <groupId>local.tin.tests</groupId>
         <artifactId>jboss-6-default-root</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../jboss-6-default-root/pom.xml</relativePath>
     </parent> 
     <dependencies>
         <dependency>

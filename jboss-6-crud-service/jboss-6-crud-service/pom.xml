@@ -9,7 +9,6 @@
         <groupId>local.tin.tests</groupId>
         <artifactId>jboss-6-crud-service-root</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../jboss-6-crud-service-root/pom.xml</relativePath>
     </parent>   
     <dependencies>                         
         <dependency>
@@ -136,7 +135,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>common-base-configuration</artifactId>
             <version>${project.version}</version>
-        </dependency>                  
+        </dependency>
     </dependencies>
     <name>jboss-6-crud-service</name>
 </project>
