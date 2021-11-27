@@ -8,14 +8,14 @@ Sample HSQLDB command:
 
 Sample JNDI entry:
 
-   &lt;local-tx-datasource&gt;  
-      &lt;jndi-name&gt;product&lt;/jndi-name&gt;
-      &lt;connection-url&gt;jdbc:hsqldb:hsql://localhost:9001/products&lt;/connection-url&gt;
-      &lt;driver-class&gt;org.hsqldb.jdbcDriver&lt;/driver-class&gt;
-      &lt;user-name&gt;sa&lt;/user-name&gt;
-      &lt;password&gt;&lt;/password&gt;
-      &lt;min-pool-size&gt;5&lt;/min-pool-size&gt;
-      &lt;max-pool-size&gt;20&lt;/max-pool-size&gt;
-      &lt;idle-timeout-minutes&gt;0&lt;/idle-timeout-minutes&gt;
-      &lt;prepared-statement-cache-size&gt;32&lt;/prepared-statement-cache-size&gt;
-   &lt;/local-tx-datasource&gt;
+   &lt;local-tx-datasource&gt;<br/>  
+      &lt;jndi-name&gt;<br/>product&lt;/jndi-name&gt;<br/>
+      &lt;connection-url&gt;<br/>jdbc:hsqldb:hsql://localhost:9001/products&lt;/connection-url&gt;<br/>
+      &lt;driver-class&gt;<br/>org.hsqldb.jdbcDriver&lt;/driver-class&gt;<br/>
+      &lt;user-name&gt;<br/>sa&lt;/user-name&gt;<br/>
+      &lt;password&gt;<br/>&lt;/password&gt;<br/>
+      &lt;min-pool-size&gt;<br/>5&lt;/min-pool-size&gt;<br/>
+      &lt;max-pool-size&gt;<br/>20&lt;/max-pool-size&gt;<br/>
+      &lt;idle-timeout-minutes&gt;<br/>0&lt;/idle-timeout-minutes&gt;<br/>
+      &lt;prepared-statement-cache-size&gt;<br/>32&lt;/prepared-statement-cache-size&gt;<br/>
+   &lt;/local-tx-datasource&gt;<br/>
