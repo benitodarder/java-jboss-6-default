@@ -8,14 +8,14 @@ Sample HSQLDB command:
 
 Sample JNDI entry:
 
-   <local-tx-datasource>  
-      <jndi-name>product</jndi-name>
-      <connection-url>jdbc:hsqldb:hsql://localhost:9001/products</connection-url>
-      <driver-class>org.hsqldb.jdbcDriver</driver-class>
-      <user-name>sa</user-name>
-      <password></password>
-      <min-pool-size>5</min-pool-size>
-      <max-pool-size>20</max-pool-size>
-      <idle-timeout-minutes>0</idle-timeout-minutes>
-      <prepared-statement-cache-size>32</prepared-statement-cache-size>
-   </local-tx-datasource>
+   &lt;local-tx-datasource&gt;  
+      &lt;jndi-name&gt;product&lt;/jndi-name&gt;
+      &lt;connection-url&gt;jdbc:hsqldb:hsql://localhost:9001/products&lt;/connection-url&gt;
+      &lt;driver-class&gt;org.hsqldb.jdbcDriver&lt;/driver-class&gt;
+      &lt;user-name&gt;sa&lt;/user-name&gt;
+      &lt;password&gt;&lt;/password&gt;
+      &lt;min-pool-size&gt;5&lt;/min-pool-size&gt;
+      &lt;max-pool-size&gt;20&lt;/max-pool-size&gt;
+      &lt;idle-timeout-minutes&gt;0&lt;/idle-timeout-minutes&gt;
+      &lt;prepared-statement-cache-size&gt;32&lt;/prepared-statement-cache-size&gt;
+   &lt;/local-tx-datasource&gt;
