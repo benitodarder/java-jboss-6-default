@@ -1,4 +1,4 @@
-# jboss-6-default
+# java-jboss-6-default
 
 Sample webapps to run on a stock JBoss 6. These were created while working on a legacy system... Working after 8 years deprecation.
 
