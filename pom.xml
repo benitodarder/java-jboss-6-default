@@ -49,7 +49,7 @@
         <log4j.version>1.2.17</log4j.version>
         <persistence.api.version>1.0</persistence.api.version>      
         <javax.persistence.api.version>2.2</javax.persistence.api.version>  
-        <resteasy.version>2.2.1.GA</resteasy.version>  
+        <resteasy.version>3.0.20.Final</resteasy.version>  
         <saxon.he.version>9.8.0-7</saxon.he.version>
         <scannotation.version>1.0.3</scannotation.version> 
         <sjsxp.version>1.0.1</sjsxp.version> 
