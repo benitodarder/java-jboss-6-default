@@ -32,7 +32,7 @@
         <commons.logging.version>1.0.4</commons.logging.version>
         <hibernate.version>3.5.0-Final</hibernate.version>
         <hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>        
-        <infinispan.version>4.2.0.FINAL</infinispan.version>   
+        <infinispan.version>11.0.6.Final</infinispan.version>   
         <jackson.version>1.6.3</jackson.version>        
         <javaassist.version>3.12.1.GA</javaassist.version>
         <java.ee.web.version>6.0</java.ee.web.version>
